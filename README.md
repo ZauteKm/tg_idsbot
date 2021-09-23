@@ -47,6 +47,13 @@ To-Do
 - `OWNER_ID` - Get it from [@UseTGidBot](https://t.me/UseTGidBot) by sending /id to it.
 - `OWNER_NAME` - Your Name (to be shown as owner in bot)
 
+---
+
+### Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZauteKm/UseTGidBot)
+
+---
 
 ### Deploy in your VPS
 
