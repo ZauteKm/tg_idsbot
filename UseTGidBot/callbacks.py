@@ -25,7 +25,7 @@ async def _calls(bot, callback_query):
 	message_id = callback_query.message.message_id
 	# .lower() to test somethings..
 	if callback_query.data.lower() == "home":
-		user = await idbot.get_me()
+		user = await bot.get_me()
 		mention = user["mention"]
 		await idbot.edit_message_text(
 			chat_id=chat_id,
