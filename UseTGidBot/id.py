@@ -33,10 +33,10 @@ async def id(bot, msg):
 					await msg.reply("Username should start with '@'", quote=True)
 					return
 				try:
-					user = await idbot.get_users(check)
+					user = await bot.get_users(check)
 					name = user["first_name"]
 				except:
-					user = await idbot.get_chat(check)
+					user = await bot.get_chat(check)
 					name = user["title"]
 				if len(name) <= 20:
 					pass
