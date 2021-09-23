@@ -36,7 +36,7 @@ async def _calls(bot, callback_query):
 			reply_markup=InlineKeyboardMarkup(Data.buttons),
 		)
 	if callback_query.data.lower() == "about":
-		await idbot.edit_message_text(
+		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
 			text=Data.ABOUT,
@@ -45,7 +45,7 @@ async def _calls(bot, callback_query):
 		)
 
 	if callback_query.data.lower() == "source":
-		await idbot.edit_message_text(
+		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
 			text=Data.SOURCE,
@@ -53,7 +53,7 @@ async def _calls(bot, callback_query):
 			reply_markup=InlineKeyboardMarkup(Data.home_button),
 		)
 	if callback_query.data.lower() == "help":
-		await idbot.edit_message_text(
+		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
 			text=Data.HELP,
