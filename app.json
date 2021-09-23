@@ -1,0 +1,42 @@
+{
+  "name": "Telegram ID Bot",
+  "description": "Telegram bot to give id of any user, group, bot, channels and even stickers.",
+  "logo": "https://telegra.ph/file/abd2d46bfade02807bb6e.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+  "repository": "https://github.com/ZauteKm/UseTGidBot",
+  "website": "https://telegram.dog/UseTGidBot",
+  "success_url": "https://t.me/ZauteKm",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org or @UseTGZKBot"
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org or @UseTGzkBot"
+    },
+    "BOT_TOKEN": {
+      "description": "Obtain a Telegram bot token by contacting @BotFather"
+    },
+    "OWNER_ID": {
+      "description": "Get your id by sending /id to @UseTGidBot. Fill only if you filled OWNER_NAME.", 
+      "required": false
+    }, 
+    "OWNER_NAME": {
+      "description": "Your name (to show as owner).Fill only if you filled OWNER_ID.", 
+      "required": false
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
