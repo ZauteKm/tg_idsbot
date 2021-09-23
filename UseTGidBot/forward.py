@@ -17,7 +17,7 @@ from pyrogram import Client, filters
 
 # Forwarded
 @Client.on_message(filters.private & filters.forwarded)
-async def forwarded(idbot, msg):
+async def forwarded(bot, msg):
     if msg.forward_from:
         text = "Forward detected! \n\n"
         if msg.forward_from["is_bot"]:
