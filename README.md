@@ -1,4 +1,4 @@
-# UseTGidBot
+# idsbot [telegram]
 
 Telegram bot to give id of any user, group,bot, channels and even stickers.
 
@@ -10,8 +10,8 @@ Telegram bot to give id of any user, group,bot, channels and even stickers.
 
 ---
 
-[![GitHub forks](https://img.shields.io/github/forks/ZauteKm/UseTGidBot.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ZauteKm/UseTGidBot/network/) [![GitHub stars](https://img.shields.io/github/stars/ZauteKm/UseTGidBot.svg?style=social&label=Star&maxAge=2592000)](https://github.com/ZauteKm/UseTGidBot/stargazers/) [![GitHub watchers](https://img.shields.io/github/watchers/ZauteKm/UseTGidBot.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/ZauteKm/UseTGidBot/watchers/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ZauteKm/UseTGidBot/graphs/commit-activity)
+[![GitHub forks](https://img.shields.io/github/forks/ZauteKm/tg_idsbot.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ZauteKm/tg_idsbot/network/) [![GitHub stars](https://img.shields.io/github/stars/ZauteKm/tg_idsbot.svg?style=social&label=Star&maxAge=2592000)](https://github.com/ZauteKm/tg_idsbot/stargazers/) [![GitHub watchers](https://img.shields.io/github/watchers/ZauteKm/tg_idsbot.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/ZauteKm/tg_idsbot/watchers/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ZauteKm/tg_idsbot/graphs/commit-activity)
 
 ---
 
@@ -51,15 +51,15 @@ To-Do
 
 ### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZauteKm/UseTGidBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZauteKm/tg_idsbot)
 
 ---
 
 ### Deploy in your VPS
 
 ```
-git clone https://github.com/ZauteKm/UseTGidBot
-cd UseTGidBot
+git clone https://github.com/ZauteKm/tg_idsbot
+cd tg_idsbot
 pip3 install -r requirements.txt
 # <Create Variables appropriately>
 python3 bot.py
