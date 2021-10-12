@@ -12,7 +12,7 @@
 
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-from Data import Data
+from data import Data
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -21,7 +21,7 @@ from pyrogram.types import InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command(["help"]))
 async def help(bot, msg):
 	await msg.reply(
-		text=Data.HELP,
+		text=data.HELP,
 		disable_web_page_preview=True,
-		reply_markup=InlineKeyboardMarkup(Data.home_button),
+		reply_markup=InlineKeyboardMarkup(data.home_button),
 	)
