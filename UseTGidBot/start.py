@@ -12,8 +12,8 @@
 
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-from Data import Data
-from Config import Config
+from data import Data
+from config import Config
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -26,6 +26,6 @@ async def start(bot, msg):
     mention = user["mention"]
     await bot.send_message(
         msg.chat.id,
-        Data.START.format(msg.from_user.mention, mention, msg.from_user.id),
-        reply_markup=InlineKeyboardMarkup(Data.buttons),
+        data.START.format(msg.from_user.mention, mention, msg.from_user.id),
+        reply_markup=InlineKeyboardMarkup(data.buttons),
     )
