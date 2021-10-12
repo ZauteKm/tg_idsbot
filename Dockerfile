@@ -6,7 +6,7 @@ RUN pip3 install -U pip
 COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /UseTGidBot
-WORKDIR /UseTGidBot
+RUN mkdir /tg_idsbot
+WORKDIR /tg_idsbot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
