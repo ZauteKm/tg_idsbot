@@ -12,7 +12,7 @@
 
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-from Data import Data
+from data import Data
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 
