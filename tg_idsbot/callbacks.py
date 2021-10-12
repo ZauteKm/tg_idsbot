@@ -30,34 +30,34 @@ async def _calls(bot, callback_query):
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=data.START.format(
+			text=Data.START.format(
 				callback_query.from_user.mention, mention, callback_query.from_user.id
 			),
-			reply_markup=InlineKeyboardMarkup(data.buttons),
+			reply_markup=InlineKeyboardMarkup(Data.buttons),
 		)
 	if callback_query.data.lower() == "about":
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=data.ABOUT,
+			text=Data.ABOUT,
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(data.home_button),
+			reply_markup=InlineKeyboardMarkup(Data.home_button),
 		)
 
 	if callback_query.data.lower() == "source":
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=data.SOURCE,
+			text=Data.SOURCE,
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(data.home_button),
+			reply_markup=InlineKeyboardMarkup(Data.home_button),
 		)
 	if callback_query.data.lower() == "help":
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=data.HELP,
+			text=Data.HELP,
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(data.home_button),
+			reply_markup=InlineKeyboardMarkup(Data.home_button),
 		)
 		""" More Plans """
