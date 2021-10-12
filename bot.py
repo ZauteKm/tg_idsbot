@@ -14,7 +14,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import logging
 from pyrogram import Client, idle
-from Config import Config
+from config import Config
 
 
 logging.basicConfig(
@@ -28,7 +28,7 @@ app = Client(
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
     bot_token=Config.BOT_TOKEN,
-    plugins=dict(root="UseTGidBot"),
+    plugins=dict(root="tg_idsbot"),
 )
 
 
