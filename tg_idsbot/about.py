@@ -21,7 +21,7 @@ from pyrogram.types import InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command(["about"]))
 async def about(bot, msg):
     await msg.reply(
-        text=Data.ABOUT,
+        text=data.ABOUT,
         disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(Data.home_button),
+        reply_markup=InlineKeyboardMarkup(data.home_button),
     )
