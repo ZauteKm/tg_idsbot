@@ -1,28 +1,28 @@
 {
-  "name": "Telegram ID Bot",
+  "name": "idsbot [tg]",
   "description": "Telegram bot to give id of any user, group, bot, channels and even stickers.",
-  "logo": "https://telegra.ph/file/abd2d46bfade02807bb6e.jpg",
+  "logo": "https://telegra.ph/file/a894f9a8f50c2a063f06f.jpg",
   "keywords": [
     "telegram",
     "bot",
     "python",
     "pyrogram"
   ],
-  "repository": "https://github.com/ZauteKm/UseTGidBot",
-  "website": "https://telegram.dog/UseTGidBot",
-  "success_url": "https://t.me/ZauteKm",
+  "repository": "https://github.com/ZauteKm/tg_idsbot",
+  "website": "https://telegram.dog/tg_idsbot",
+  "success_url": "https://t.me/tgbotsproject",
   "env": {
     "API_ID": {
-      "description": "Get this value from my.telegram.org or @UseTGZKBot"
+      "description": "Get this value from my.telegram.org"
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org or @UseTGzkBot"
+      "description": "Get this value from my.telegram.org"
     },
     "BOT_TOKEN": {
       "description": "Obtain a Telegram bot token by contacting @BotFather"
     },
     "OWNER_ID": {
-      "description": "Get your id by sending /id to @UseTGidBot. Fill only if you filled OWNER_NAME.", 
+      "description": "Get your id by sending /id to @tg_idsbot. Fill only if you filled OWNER_NAME.", 
       "required": false
     }, 
     "OWNER_NAME": {
