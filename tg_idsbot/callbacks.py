@@ -14,8 +14,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
-from Config import Config
-from Data import Data
+from config import Config
+from data import Data
 
 
 # Callbacks
@@ -30,34 +30,34 @@ async def _calls(bot, callback_query):
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=Data.START.format(
+			text=data.START.format(
 				callback_query.from_user.mention, mention, callback_query.from_user.id
 			),
-			reply_markup=InlineKeyboardMarkup(Data.buttons),
+			reply_markup=InlineKeyboardMarkup(data.buttons),
 		)
 	if callback_query.data.lower() == "about":
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=Data.ABOUT,
+			text=data.ABOUT,
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(Data.home_button),
+			reply_markup=InlineKeyboardMarkup(data.home_button),
 		)
 
 	if callback_query.data.lower() == "source":
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=Data.SOURCE,
+			text=data.SOURCE,
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(Data.home_button),
+			reply_markup=InlineKeyboardMarkup(data.home_button),
 		)
 	if callback_query.data.lower() == "help":
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text=Data.HELP,
+			text=data.HELP,
 			disable_web_page_preview=True,
-			reply_markup=InlineKeyboardMarkup(Data.home_button),
+			reply_markup=InlineKeyboardMarkup(data.home_button),
 		)
 		""" More Plans """
