@@ -67,7 +67,7 @@ python3 bot.py
 
 ---
 
-## License
+## License hi
 
 ```
 #!/usr/bin/env python3
